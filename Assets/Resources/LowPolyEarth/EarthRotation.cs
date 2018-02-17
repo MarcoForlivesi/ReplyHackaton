@@ -18,8 +18,7 @@ public class EarthRotation : MonoBehaviour {
 		if (Input.GetMouseButtonDown(0))
         {
             float move = Input.GetAxis("Mouse X");
-
-            Debug.Log("Move " + move);
+            Debug.Log("Move  " + move);
             if (Mathf.Abs(move) < threshold)
             {
                 rigidbody.angularVelocity = Vector3.zero;
