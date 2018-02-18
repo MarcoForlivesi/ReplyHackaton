@@ -30,7 +30,7 @@ public class Water : MonoBehaviour {
 
         RaycastHit info;
         Ray ray = Camera.main.ScreenPointToRay(new Vector2(Screen.width / 2, Screen.height / 2));
-        bool hit = Physics.Raycast(ray, out info, 2000, ~(1 << LayerMask.NameToLayer("Plant")));
+        bool hit = Physics.Raycast(ray, out info, 2000);
 
         
 

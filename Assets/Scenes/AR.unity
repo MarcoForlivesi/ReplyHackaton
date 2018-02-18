@@ -1036,7 +1036,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   water: {fileID: 163333224}
-  zOffset: 0
+  zOffset: 10
 --- !u!114 &1079817458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2033,6 +2033,26 @@ Prefab:
     - target: {fileID: 136900, guid: 3ca37b12a14be5249a2baeea950df0e4, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19820946, guid: 3ca37b12a14be5249a2baeea950df0e4, type: 2}
+      propertyPath: ShapeModule.m_Rotation.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 19820946, guid: 3ca37b12a14be5249a2baeea950df0e4, type: 2}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 19820946, guid: 3ca37b12a14be5249a2baeea950df0e4, type: 2}
+      propertyPath: ShapeModule.m_Scale.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 136900, guid: 3ca37b12a14be5249a2baeea950df0e4, type: 2}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 19820946, guid: 3ca37b12a14be5249a2baeea950df0e4, type: 2}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2337074, guid: 3ca37b12a14be5249a2baeea950df0e4, type: 2}

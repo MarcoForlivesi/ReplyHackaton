@@ -24,4 +24,9 @@ public class Plant : MonoBehaviour
     {
         Debug.Log("Collision " + collision.collider.name);
     }
+
+    void OnParticleCollision(GameObject other)
+    {
+        Debug.Log("Collision " + other.name);
+    }
 }
