@@ -579,6 +579,7 @@ GameObject:
   - component: {fileID: 1588516331}
   - component: {fileID: 1588516333}
   - component: {fileID: 1588516332}
+  - component: {fileID: 1588516334}
   m_Layer: 0
   m_Name: Terrain
   m_TagString: Untagged
@@ -640,6 +641,20 @@ Terrain:
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 0.0512
   m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+--- !u!64 &1588516334
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1588516330}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 0}
 --- !u!1 &1644707907
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,6 +666,8 @@ GameObject:
   - component: {fileID: 1644707911}
   - component: {fileID: 1644707910}
   - component: {fileID: 1644707909}
+  - component: {fileID: 1644707912}
+  - component: {fileID: 1644707913}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -714,7 +731,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1644707910}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1644707913}
+        m_MethodName: OnTouch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1644707910
@@ -750,6 +778,32 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1644707907}
+--- !u!114 &1644707912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1644707907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbdd3a2f960d0ed47bf6c4bf3a3e52ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 100000, guid: 13db3bc0249e4fb488d99dd2d7d509fb, type: 2}
+  startingPosition: {fileID: 1332604924}
+  force: 1500
+--- !u!114 &1644707913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1644707907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364deaa141077bf4780744957004c4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 100000, guid: 13db3bc0249e4fb488d99dd2d7d509fb, type: 2}
 --- !u!4 &1741606440 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4642527201580204, guid: 286442d2fce957145bf86757f1bced97,
