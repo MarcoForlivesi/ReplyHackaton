@@ -2004,11 +2004,35 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 19820946, guid: 3ca37b12a14be5249a2baeea950df0e4, type: 2}
       propertyPath: InitialModule.startSpeed.scalar
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 19820946, guid: 3ca37b12a14be5249a2baeea950df0e4, type: 2}
       propertyPath: ShapeModule.radius.value
       value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 19820946, guid: 3ca37b12a14be5249a2baeea950df0e4, type: 2}
+      propertyPath: ForceModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19820946, guid: 3ca37b12a14be5249a2baeea950df0e4, type: 2}
+      propertyPath: ForceModule.y.scalar
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 19820946, guid: 3ca37b12a14be5249a2baeea950df0e4, type: 2}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.14987022
+      objectReference: {fileID: 0}
+    - target: {fileID: 19820946, guid: 3ca37b12a14be5249a2baeea950df0e4, type: 2}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.9264706
+      objectReference: {fileID: 0}
+    - target: {fileID: 19820946, guid: 3ca37b12a14be5249a2baeea950df0e4, type: 2}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.86220014
+      objectReference: {fileID: 0}
+    - target: {fileID: 136900, guid: 3ca37b12a14be5249a2baeea950df0e4, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2337074, guid: 3ca37b12a14be5249a2baeea950df0e4, type: 2}

@@ -15,9 +15,8 @@ public class Water : MonoBehaviour {
 	void Update () {
         RaycastHit info;
         Ray ray = Camera.main.ScreenPointToRay(new Vector2(Screen.width / 2, Screen.height / 2));
-        bool hit = Physics.Raycast(ray, out info, 2000);
+        bool hit = Physics.Raycast(ray, out info, 2000, ~(1 << LayerMask.NameToLayer("Plant")));
         Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.position - ray.direction * 1000);
-        Debug.Log("Water direction" + ray.direction);
 
         if (hit && info.collider.gameObject)
         {
@@ -27,15 +26,17 @@ public class Water : MonoBehaviour {
 
     public void OnTouch()
     {
+        water.SetActive(!water.activeSelf);
+
         RaycastHit info;
         Ray ray = Camera.main.ScreenPointToRay(new Vector2(Screen.width / 2, Screen.height / 2));
-        bool hit = Physics.Raycast(ray, out info, 2000);
+        bool hit = Physics.Raycast(ray, out info, 2000, ~(1 << LayerMask.NameToLayer("Plant")));
 
+        
 
         if (hit)
         {
             GameObject hitObject = info.collider.gameObject;
-            Debug.Log(hitObject.name + " ");
             if (hitObject.tag == "Plant")
             {
                 Plant plant = hitObject.GetComponent<Plant>();

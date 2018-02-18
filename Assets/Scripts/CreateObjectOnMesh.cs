@@ -24,10 +24,12 @@ public class CreateObjectOnMesh : MonoBehaviour {
         {
             RaycastHit info;
             Ray ray = Camera.main.ScreenPointToRay(new Vector2(Screen.width / 2, Screen.height / 2));
-            bool hit = Physics.Raycast(ray, out info, 2000);
+            bool hit = Physics.Raycast(ray, out info, 2000, ~(1 <<LayerMask.NameToLayer("Plant")));
 
-            if (hit && info.collider.gameObject != prefabObj)
+            
+            if (hit)
             {
+                //Debug.Log("hit " + info.collider.name);
                 prefabObj.transform.position = info.point;
             }
         }
