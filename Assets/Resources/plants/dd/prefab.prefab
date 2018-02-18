@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 2300000}
   - component: {fileID: 9500000}
   - component: {fileID: 65413445584938390}
+  - component: {fileID: 114399471164602692}
   m_Layer: 0
   m_Name: prefab
-  m_TagString: Untagged
+  m_TagString: Plant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113,3 +114,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03020518, y: 0.03250611, z: 0.06930912}
   m_Center: {x: 0.0018808106, y: 0.0020559109, z: 0.03465456}
+--- !u!114 &114399471164602692
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e72360e79a635a40b24f6c271b542ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endValue: 2000
+  duration: 4
