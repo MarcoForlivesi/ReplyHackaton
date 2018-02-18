@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Water : MonoBehaviour {
+    public GameObject water;
+    public float zOffset;
 
 	// Use this for initialization
 	void Start () {
@@ -19,7 +21,7 @@ public class Water : MonoBehaviour {
 
         if (hit && info.collider.gameObject)
         {
-            
+            water.transform.position = info.point + Vector3.up * zOffset;
         }
     }
 
